@@ -15,18 +15,10 @@ public class TestBase {
         Configuration.browserSize = System.getProperty("browserSize", "1920x1080");
         Configuration.browser = System.getProperty("browser", "chrome");
         Configuration.pageLoadStrategy = System.getProperty("pageLoadStrategy", "eager");
-//        Configuration.remote = "https://" +
-//                System.getProperty("remoteLogin") +
-//                ":" +
-//                System.getProperty("remotePassword") +
-//                "@" +
-//                System.getProperty("remoteUrl", "selenoid.autotests.cloud/wd/hub");
-
-
-
+        Configuration.remote = System.getProperty("remote");
         Configuration.headless = Boolean.parseBoolean(System.getProperty("headless", "false"));
         Configuration.holdBrowserOpen = Boolean.parseBoolean(System.getProperty("holdBrowserOpen", "false"));
-        Configuration.remote = "https://user1:1234@selenoid.autotests.cloud/wd/hub";
+    //    Configuration.remote = "https://user1:1234@selenoid.autotests.cloud/wd/hub";
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("selenoid:options", Map.<String, Object>of(
                 "enableVNC", true,
