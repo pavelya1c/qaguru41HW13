@@ -11,7 +11,7 @@ import static io.qameta.allure.Allure.step;
 import static testdata.TestData.*;
 
 
-public class AllureHW2 extends TestBase {
+public class AllureHW3 extends TestBase {
 
     AllPages allPages = new AllPages();
 

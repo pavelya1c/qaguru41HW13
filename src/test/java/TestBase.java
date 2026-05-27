@@ -15,6 +15,7 @@ public class TestBase {
         Configuration.baseUrl = System.getProperty("baseUrl", "https://demoqa.com");
         Configuration.browserSize = System.getProperty("browserSize", "1920x1080");
         Configuration.browser = System.getProperty("browser", "chrome");
+        Configuration.browserVersion = System.getProperty("browser_version", "128.0");
         Configuration.pageLoadStrategy = System.getProperty("pageLoadStrategy", "eager");
         Configuration.remote = System.getProperty("remote");
         Configuration.headless = Boolean.parseBoolean(System.getProperty("headless", "false"));
